@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamentos de Informática</title>
+</head>
+<body>
+    <header>
+        <h1>Equipamentos de Informática</h1>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="pedidos/pedidos.html">Fazer Pedido</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <img src="/imagens/equipamentos.png" alt="Equipamentos de Informática" width="900">
+        
+        <h2>Fazer Pedido</h2>
+        <form>
+            <label>Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome" size="40" maxlength="40" required autofocus>
+            <label>RG:</label>
+            <input type="text" name="rg" id="rg" placeholder="RG" required size="12" maxlength="12">
+            <br>
+            <br>
+            <label>E-mail:</label>
+            <input type="text" name="email" id="email" placeholder="E-mail:" size="30" maxlength="30">
+            <label>Telefone</label>
+            <input type="text" name="telefone" id="telefone" placeholder="(99)99999-9999" title="(99)99999-9999" size="15" maxlength="15">
+            <br>
+            <br>
+
+            <label>Equipamento:</label>
+            <select name="equipamento" id="equipamento" required>
+                <optgroup>
+                    <option selected disabled>Escolha...</option>
+                    <option value="notebook">Notebook</option>
+                    <option value="computador">Computador</option>
+                    <option value="tablet">Tablet</option>
+                </optgroup>
+            </select>
+            
+            <label>Quantidade:</label>
+            <input type="number" name="quantidade" id="quantidade" min="1" max="10">
+            <label>Garantia estendida?</label>
+            <input type="checkbox" name="garantia" id="garantia">
+            <br>
+            <br>
+
+            <label>Cor:</label>
+            <input type="radio" name="color" id="branco" value="branco">
+            <label for="branco">Branco</label>
+            <input type="radio" name="color" id="preto" value="preto">
+            <label for="preto">Preto</label>
+            <input type="radio" name="color" id="prata" value="prata">
+            <label for="prata">Prata</label>
+
+            <br>
+            <br>
+
+            <label>Endereço:</label>
+            <br>
+            <textarea name="endereco" id="endereco" cols="70" rows="3" placeholder="Endereço completo"></textarea>
+            <br><br>
+
+            <button type="submit">Enviar Pedido</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </main>
+</body>
+</html>

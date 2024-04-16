@@ -1,0 +1,60 @@
+body {
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: mediumseagreen;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: dodgerblue;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    padding: 12px;
+    box-shadow: 3px 3px powderblue;
+    background-color: honeydew;
+    flex-wrap: wrap;
+}
+
+.foto {
+    width: 40%;
+}
+
+.tema {
+    color: dodgerblue;
+    padding: 12px;
+    width: 80%;
+}
+
+.texto {
+    width: 80%;
+}
+
+@media(min-width:768px){
+    .container{
+        flex-wrap: nowrap;
+    }
+
+    .foto{
+        width: 7%;
+    }
+
+    .tema{
+        width: 20%;
+    }
+
+    .texto{
+        width: 73%;
+    }
+}
