@@ -1,0 +1,166 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+nav {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 191, 255, 85%);
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: midnightblue;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.fundo1 {
+    background-image: url(/imagens/bg01.jpg);   
+}
+
+.fundo2 {
+    background-image: url(/imagens/bg02.jpg);
+}
+
+.fundo3 {
+    background-image: url(/imagens/bg03.jpg);
+}
+
+.fundo1, .fundo2, .fundo3 {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.destaque {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    color: indigo;
+    background-color: deepskyblue;
+    padding: 10px;
+    width: 40%;
+    font-size: 1rem;
+    filter: drop-shadow(4px 4px lavender);
+    margin: auto;
+}
+
+.conteudo {
+    color: midnightblue;
+    background-color: lavender;
+    padding: 160px 25px;
+}
+
+.texto {
+    text-align: justify;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+video {
+    width: 90%;
+    border: 5px ridge lightskyblue;
+    border-radius: 8px;
+}
+
+.quadro_animado {
+    width: 320px;
+    height: 200px;
+    margin: auto;
+    background-size: cover;
+    border-radius: 5%;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: muda_imagem;
+}
+
+@keyframes muda_imagem {
+    0% {background-image: url(/imagens/foto1.jpg);}
+    20% {background-image: url(/imagens/foto2.jpg);}
+    40% {background-image: url(/imagens/foto3.jpg);}
+    60% {background-image: url(/imagens/foto4.jpg);}
+    80% {background-image: url(/imagens/foto5.jpg);}
+    100% {background-image: url(/imagens/foto1.jpg);}
+}
+
+footer {
+    color: darkslategray;
+    background-color: rgba(0, 191, 255, 85%);
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    nav {
+        padding: 20px 0px;
+    }
+
+    ul {
+        padding: 5px;
+    }
+
+    li {
+        width: 25%;
+        float: left;
+        border-radius: 10px;
+        transition: background-color 1s;
+    }
+
+    li:hover {
+        background-color: rgba(30, 144, 255, 0.35);
+    }
+
+    a {
+        font-size: 1.25rem;
+    }
+
+    .destaque {
+        padding: 10px;
+        font-size: 2rem;
+        width: 25%;
+        border-radius: 15px;
+        transition: width 1s;
+    }
+
+    .destaque:hover {
+        width: 30%;
+    }
+
+    .conteudo {
+        padding: 120px;
+    }
+
+    .video {
+        width: 60%;
+    }
+
+    .quadro_animado {
+        width: 496px;
+        height: 320px;
+    }
+}
+
