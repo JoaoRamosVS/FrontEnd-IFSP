@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilos/style.css" type="text/css">
+    <link rel="icon" href="imagens/icone.png">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#ag">Agenda</a></li>
+            <li><a href="#ped">Pedidos</a></li>
+            <li><a href="#con">Contato</a></li>
+        </ul>
+        <h1>Programação</h1>
+    </header>
+
+    <main>
+        <h2>Cursos</h2>
+        <div class="container">
+            <img class="cursos" src="imagens/curso1.png" alt="Curso HTML">
+            <img class="cursos" src="imagens/curso2.png" alt="Curso CSS">
+            <img class="cursos" src="imagens/curso3.png" alt="Curso JS">
+            <img class="cursos" src="imagens/curso4.png" alt="Curso C++">
+            <img class="cursos" src="imagens/curso5.png" alt="Curso Python">
+            <img class="cursos" src="imagens/curso6.png" alt="Curso PHP">
+            <img class="cursos" src="imagens/curso7.png" alt="Curso C#">
+            <img class="cursos" src="imagens/curso8.png" alt="Curso Lua">
+        </div>
+
+        <h2 id="ag">Agenda</h2>
+        <div class="container">
+            <div class="item_agenda">
+                <img src="imagens/agenda1.jpg" alt="Curso HTML">
+                <h3>HTML</h3>
+                <h4>Agosto/2024</h4>
+                <p>Presencial</p>
+            </div>
+            <div class="item_agenda">
+                <img src="imagens/agenda2.jpg" alt="Curso CSS">
+                <h3>CSS</h3>
+                <h4>Setembro/2024</h4>
+                <p>EAD</p>
+            </div>
+            <div class="item_agenda">
+                <img src="imagens/agenda3.jpg" alt="Curso JavaScript">
+                <h3>JavaScript</h3>
+                <h4>Outubro/2024</h4>
+                <p>EAD</p>
+            </div>
+        </div>
+
+        <h2 id="ped">Pedidos</h2>
+
+        <form method="get">
+            <label for="curso">Curso</label>
+            <select name="curso" id="curso" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+            </select>
+
+            <label for="qtd">Quantidade</label>
+            <input type="number" name="qtd" id="qtd" min="1" max="20" required>
+            <input type="submit" class="botao" value="Solicitar">
+        </form>
+
+        <h2 id="con">Contato</h2>
+
+        <form method="get">
+            <p>Deixe seus dados e entraremos em contato:</p>
+            <input type="text" name="nome" id="nome" maxlength="38" required placeholder="Nome">
+            <input type="email" name="email" id="email" maxlength="38" required placeholder="E-mail">
+            <input type="text" name="fone" id="fone" maxlength="17" placeholder="Telefone" required>
+            <input class="botao" type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
