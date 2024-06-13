@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+:root {
+    --cor-fonte-principal: steelblue;
+    --cor-fonte-secundaria: midnightblue;
+    --cor-fundo-principal: lightblue;
+    --cor-fundo-secundaria: whitesmoke;    
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-fundo-principal);
+}
+header {
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo-secundaria);
+    font-size: 1.5rem;
+    z-index: 1;
+}
+main {    
+    top: 4rem;    
+    position: absolute;
+}
+.container {
+    height: 100vh;
+    margin: 1.5rem;
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 1rem; 	   
+    padding: 0.5rem;
+    align-items: center;
+    color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-fundo-secundaria);
+}
+input, select {
+    color: inherit;
+    font-family: inherit;
+    margin: 8px 5px;
+}
+.opc_cor_azul {
+    background-color: skyblue;
+}
+.opc_cor_cinza {
+    background-color: silver;
+}
+.opc_cor_verde {
+    background-color: mediumaquamarine;
+}
+.opc_fundo_escuro {
+    background-color: black;
+}
+input[type="button"] {
+    width: 40%;
+    padding: 3px;
+    background-color: var(--cor-fundo-principal);
+    border: 1px solid var(--cor-fonte-principal);
+    cursor: pointer;
+}
+#img_foco {    
+    width: 25%;
+    margin: 5px auto;
+}
+.Desfocar {
+    filter: blur(10px);
+}
+.Focar {
+    filter: none;
+}
+.opc_fonte_marrom {
+    color: sienna;
+}
+.opc_fonte_vermelho {
+    color: crimson;
+}
+.opc_fonte_rosa {
+    color: magenta;
+}
+.fundo_area_teste {
+    width: 90%;
+    margin: auto;
+    background-color: var(--cor-fundo-principal);
+}
+
+@media (min-width: 768px) { 
+    header{
+        font-size: 2rem;
+        min-height: 3rem;
+    }
+    .container {
+        height: 30vh;
+        min-height: 120px; 
+        margin: 2rem;     
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
