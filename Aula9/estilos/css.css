@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+:root {
+    --cor-fonte-principal: darkslateblue;
+    --cor-fonte-secundaria: dimgray;
+    --cor-fundo-principal: gainsboro;
+    --cor-fundo-secundaria: aliceblue ;    
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-fundo-principal);
+}
+/*#img_rede_social, .nova_figura, #img_pais { */
+img {     
+    width: 40%;
+}
+header {
+    top: 0;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo-secundaria);
+    z-index: 1;
+}
+main {    
+    top: 4rem;  
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.container {
+    max-height: 200%;
+    width: 100%;
+    margin: 1rem auto;
+    display: grid;       
+    grid-template-columns: 1fr;
+    gap: 1rem;    
+    padding: 0.25rem;
+    align-items: center;
+    color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-fundo-secundaria);
+}
+input, select, option {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: inherit;
+}
+.figuras {
+    width: 15%;
+    cursor: pointer;
+}
+#div_adiciona_figura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.novo_input {
+    width: 60%;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {        
+    /*#img_rede_social, .nova_figura, #img_pais { */
+    img {
+        width: 50%;
+    } 
+    header{
+        font-size: 2rem;
+    }
+    main {        
+        height: calc(100% - 4rem);
+    }
+    .container {
+        height: 38%; 
+        width: 90%;
+        margin: 2rem auto;
+        grid-template-columns: repeat(4, 1fr);
+    }    
+}
