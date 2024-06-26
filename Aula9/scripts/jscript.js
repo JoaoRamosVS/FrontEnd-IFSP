@@ -27,4 +27,12 @@ function funAdicionaFigura(src, alt) {
     obj_img_nova.setAttribute('title', alt)
 
     obj_div_adiciona_figura.appendChild(obj_img_nova)
+
+    obj_input_novo.setAttribute('type', 'text')
+    obj_input_novo.setAttribute('disabled', true)
+    obj_input_novo.setAttribute('value', alt)
+    obj_input_novo.setAttribute('class', 'novo_input')
+
+    obj_div_adiciona_figura.appendChild(obj_input_novo)
 }
+
