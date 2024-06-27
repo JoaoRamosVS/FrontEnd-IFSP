@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+
+:root {
+    --cor-fonte-principal: steelblue;
+    --cor-fonte-secundaria:midnightblue;
+    --cor-fundo-principal: powderblue;
+    --cor-fundo-secundaria: white;    
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sirin Stencil', cursive;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-fundo-principal);
+}
+header {
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo-secundaria);
+    z-index: 1;
+}
+main {    
+    top: 4rem; 
+    position: absolute;
+    width: 100%;
+}
+.container {
+    width: 90%;
+    margin: 1rem auto;
+    display: grid;       
+    grid-template-columns: 1fr;	
+    gap: 0.5rem;  
+    padding: 20px 0px;
+    align-items: center;
+    color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-fundo-secundaria);  
+}
+input {
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: inherit;
+    margin: 5px;
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-fonte-secundaria)
+}
+#div_poligono {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--cor-fundo-principal);
+    border: 2px dotted var(--cor-fonte-secundaria);
+    font-size: 0.75rem;
+}
+#p_perimetro {
+    margin-top: 10px;
+}
+#curiosidades {
+    width: 90%;
+    margin: 50px auto;
+}
+.titulo {
+    width: 100%;
+    padding: 5px;
+    margin: 5px auto;
+    border: 1px solid var(--cor-fonte-secundaria);
+    box-sizing: border-box;
+    background-color: var(--cor-fundo-principal);
+    cursor: pointer;
+}
+.texto {
+    display: none;
+    width: 100%;
+    padding: 5px;
+    border: 1px dashed var(--cor-fonte-secundaria);
+    box-sizing: border-box;
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-fundo-secundaria);
+}
+#linguagens img {
+    width: 25%;
+	cursor: pointer;
+}
+/* cobre toda a tela com fundo opaco*/
+#div_modal { 
+	top: 0;  
+	left: 0;
+	height: 100%;  
+	width: 100%;
+	position: fixed;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.4); 
+	z-index: 1;
+}
+.conteudo_modal {
+	width: 50%; 
+	padding: 20px;
+	margin: 50% auto; /* exibir o modal na metade da altura em telas peq */
+	border: 1px solid var(--cor-fonte-principal);
+	background-color: var(--cor-fundo-secundaria);
+}  
+.conteudo_modal img {
+	width: 50%;
+} 
+#p_fechar {
+	margin: 0;
+	text-align: right;	
+}
+#p_fechar span {
+	color: var(--cor-fonte-principal);
+}  
+#p_fechar span:hover {
+	color: var(--cor-fonte-secundaria);
+	cursor: pointer;
+}
+
+@media (min-width: 768px) { 
+    header{
+        font-size: 2rem;
+    }
+    .container {   
+        margin: 2rem auto;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+	.conteudo_modal { 
+		width: 20%;
+		margin: 10% auto;
+	}
+}

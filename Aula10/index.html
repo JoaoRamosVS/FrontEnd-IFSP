@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos/css.css" />
+    <link rel="icon" href="imagens/javascript.png" />
+    <title>Atividade JavaScript</title>
+    <script src="scripts/jscript.js" defer></script>  
+</head>
+<body>
+    <header>
+        Funcionalidades JavaScript
+    </header>
+    <main>
+        <div class="container">
+           <div>        
+                Dimensões: <br />
+                Largura: <input type="number" id="num_largura" min="50" max="100" value="50" /> px 
+                <br />
+                Altura: <input type="number" id="num_altura" min="50" max="100" value="50" /> px
+                <br /><br />              
+                <div id="div_poligono"></div>
+                <p id="p_perimetro">Perímetro:</p>
+            </div>
+
+            <div id="curiosidades">
+                <div class="titulo">
+                    Curiosidade 1
+                    <div class="texto">
+                        Em 2023, o JavaScript se destacou, pelo décimo primeiro ano consecutivo, como a linguagem de programação mais utilizada no mundo.
+                    </div>
+                </div>
+                <div class="titulo">
+                    Curiosidade 2
+                    <div class="texto">
+                        JavaScript é uma linguagem interpretada, o que significa que o código é executado diretamente pelo navegador, dispensando um compilador. 
+                    </div>
+                </div>
+            </div>
+
+            <div id="linguagens">
+                <img src="imagens/arq1.png" alt="HTML" />
+                <img src="imagens/arq2.png" alt="CSS" />
+                <img src="imagens/arq3.png" alt="JavaScript" />
+            </div>
+
+            <!-- A div abaixo só aparece ao clicar sobre as imagens acima (MODAL) -->
+            <!-- a div_modal cobre toda a tela com fundo opaco -->
+            <div id="div_modal">
+                <div class="conteudo_modal">
+                    <!-- Símbolo de "x": melhor usar esse símbolo do que escrever a letra, 
+                     pois pode estar usando uma fonte que deixa o resultado estranho. 
+                     O símbolo usa uma fonte parecida com o Navegador / Windows  
+                     Coloquei num parágrafo para ser fácil de posicionar no canto direito -->
+                    <p id="p_fechar"><span>&times;</span></p>
+                    <img id="img_modal" alt="" />
+                    <p id="p_modal"></p>
+                </div>
+            </div> 
+        </div>
+    </main>      
+</body>
+</html>
